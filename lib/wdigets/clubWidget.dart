@@ -55,7 +55,7 @@ class ClubWidget extends StatelessWidget {
             top: 310,
             child: Text(
               number_of_events,
-              style: TextStyle(fontWeight: FontWeight.w400, fontSize: 18),
+              style: TextStyle(fontWeight: FontWeight.w400, fontSize: 18,),
             ),
           ),
           Positioned(

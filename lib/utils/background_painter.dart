@@ -5,8 +5,8 @@ class BackgroundPainter extends CustomPainter{
   @override
   void paint(Canvas canvas, Size size) {
     var paint = Paint()
-      ..color = Colors.grey.shade800
-      ..strokeWidth = 0.4
+      ..color = Colors.white30
+      ..strokeWidth = 0.8
       ..style = PaintingStyle.stroke;
     canvas.drawOval(Rect.fromLTWH(size.height,size.height,size.height,size.height), paint);
   }

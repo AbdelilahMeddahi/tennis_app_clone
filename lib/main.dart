@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:tennis_app_clone/screens/home_screen.dart';
 
 
 import 'screens/splash_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [
+    //This line is used for showing the bottom bar
+  ]);
   runApp(const MyApp());
 }
 
